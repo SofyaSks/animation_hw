@@ -1,0 +1,25 @@
+﻿<Window x:Class="animation_hw.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:animation_hw"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" FontSize="20">
+    <DockPanel>
+        <Button Click="Button_Click_Flattening" DockPanel.Dock="Bottom">Сплющивание</Button>
+        <UniformGrid DockPanel.Dock="Bottom">
+            <Button Click="ButtonClickFlashing">Мигание</Button>
+            <Button Click="Button_Click_Pulse"> Пульсирование</Button>
+            <Button Click="Button_Click_Rotate">Вращение</Button>
+            <Button Click="Button_Click_Pendulum">Маятник</Button>
+        </UniformGrid>
+       
+
+            <Canvas>
+            <Image x:Name="cubic" Canvas.Left="300" Canvas.Top="80" Source="cubic.png" Width="200">
+               
+            </Image>
+        </Canvas>
+    </DockPanel>
+</Window>
